@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="../img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/Logo.jpg" alt="Logo de la tienda">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+
+          <li>
+            <a href="#calzado">Calzado</a>
+            <ul class="submenu">
+              <li><a href="./calzado/tenis.html">Tenis</a></li>
+              <li><a href="#">Zapatos</a></li>
+              <li><a href="#">Botas</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#ropa">Ropa</a>
+            <ul class="submenu">
+              <li><a href="#">Sudaderas</a></li>
+              <li><a href="./playeras.html">Playeras</a></li>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Gorras</a></li>
+            </ul>
+          </li>
+
+         
+        </ul>
+      </li>
+
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="buscador">
+      <input type="text" id="busqueda" placeholder="Buscar producto...">
+      <button id="btn-buscar">Buscar</button>
+    </div>
+
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1l-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="oferta"><span>¡Playeras con descuento del 20%!</span></div>
+
+  <p class="bienvenida">Bienvenidos a The Men's, tienda exclusiva para Hombres</p>
+  <h2 style="padding:0 20px;">Playeras de Temporada</h2>
+
+  <div class="productos">
+
+    <!-- PLAYERA 1 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/plafit.avif" alt="">
+        <img src="/tienda/img/plafit.avif" alt="">
+      </div>
+      <p class="nombre">Playera Classic Fit</p>
+      <p class="precio">$350</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+
+    <!-- PLAYERA 2 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/pladep1.avif" alt="">
+        <img src="/tienda/img/pladep1_1.avif" alt="">
+      </div>
+      <p class="nombre">Playera Deportiva DryFit</p>
+      <p class="precio">$420</p>
+      <p>Talla: L</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+
+    <!-- PLAYERA 3 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/plaal.avif" alt="">
+        <img src="/tienda/img/plaal.avif" alt="">
+      </div>
+      <p class="nombre">Playera Casual 100% algodón</p>
+      <p class="precio">$280</p>
+      <p>Talla: S</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+
+    <!-- PLAYERA 4 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/plau.avif" alt="">
+        <img src="/tienda//img//plau.avif" alt="">
+      </div>
+      <p class="nombre">Playera Premium Urban Style</p>
+      <p class="precio">$520</p>
+      <p>Talla: XL</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

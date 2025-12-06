@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="../img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/Logo.jpg" alt="Logo de la tienda">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+          <li>
+            <a href="#calzado">Calzado</a>
+            <ul class="submenu">
+              <li><a href="./tenis.html">Tenis</a></li>
+              <li><a href="#">Zapatos</a></li>
+              <li><a href="#">Botas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#ropa">Ropa</a>
+            <ul class="submenu">
+              <li><a href="#">Sudaderas</a></li>
+              <li><a href="#">Playeras</a></li>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Gorras</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+      </li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- BUSCADOR -->
+    <div class="buscador">
+      <input type="text" id="buscar" placeholder="Buscar producto...">
+      <button id="btn-buscar">Buscar</button>
+    </div>
+
+    <!-- RESULTADOS BUSCADOR -->
+    <div id="resultados"></div>
+
+    <!-- CARRITO -->
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1l-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="oferta"><span>¡Aprovecha nuestros descuentos del 20%!</span></div>
+
+  <h2 style="padding:0 20px;">Zapatos de Hombre</h2>
+
+  <div class="productos">
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/zca1_1.avif" alt="">
+        <img src="../img/zca1_2.avif" alt="">
+      </div>
+      <p class="nombre">Zapato derby para hombre color cafe</p>
+      <p class="precio">$1500</p>
+      <p>Talla: S,M,G</p>
+      <button class="btn-agregar" data-nombre="Zapato derby para hombre color cafe" data-precio="1500">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/zca2_1.avif" alt="">
+        <img src="../img/zca2_2.avif" alt="">
+      </div>
+      <p class="nombre">Zapato choclo para hombre color azul</p>
+      <p class="precio">$1400</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar" data-nombre="Zapato choclo para hombre color azul" data-precio="1400">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/zca_3_1.avif" alt="">
+        <img src="../img/zca3_2.avif" alt="">
+      </div>
+      <p class="nombre">Zapato derby para hombre color negro</p>
+      <p class="precio">$1200</p>
+      <p>Talla: L</p>
+      <button class="btn-agregar" data-nombre="Zapato derby para hombre color negro" data-precio="1200">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/zca_4_1.avif" alt="">
+        <img src="../img/zca4_2.avif" alt="">
+      </div>
+      <p class="nombre">Zapato choclo para hombre</p>
+      <p class="precio">$900</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar" data-nombre="Zapato choclo para hombre" data-precio="900">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT CORRECTO -->
+  <script src="../../script.js"></script>
+</body>
+</html>

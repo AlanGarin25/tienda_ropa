@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="./tienda/css/styles.css" />
+</head>
+<body>
+ 
+  <div class="banner">
+    <img src="./tienda/img/ban.png" alt="Banner de la tienda" />
+  </div>
+ 
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./tienda/img/" alt="Logo de la tienda" />
+      <p class="ma">THE MEN'S</p>
+    </div>
+ 
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">Calzado</a>
+            <ul class="submenu">
+              <li><a href=".//tienda/categorias/tenis.html">Tenis</a></li>
+              <li><a href=".//tienda/categorias/zapatos.html">Zapatos</a></li>
+              <li><a href="#">Botas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ropa</a>
+            <ul class="submenu">
+              <li><a href="#">Sudaderas</a></li>
+              <li><a href="#">Playeras</a></li>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Gorras</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+      <li><a href="./contactos.html">Contacto</a></li>
+    </ul>
+ 
+    <div class="buscador">
+      <input type="text" id="busqueda" placeholder="Buscar producto..." />
+      <button id="btn-buscar">Buscar</button>
+    </div>
+ 
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1l-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="oferta"><span>¡Aprovecha nuestros descuentos del 20%!</span></div>
+ 
+  <p class="bienvenida">Bienvenidos a The Men's, tienda exclusiva para Hombres</p>
+  <h2 style="padding: 0 20px;">Lo nuevo en sudaderas</h2>
+ 
+  <div class="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaeagles.jpg" alt="Sudadera Philadelphia Eagles" />
+        <img src="./tienda/img/sudaea_01.webp" alt="Sudadera Philadelphia Eagles vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Philadelphia Eagles</p>
+      <p class="precio">$500</p>
+      <p>Talla: S, M, G</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 2 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaeagles1.jpg" alt="Sudadera Philadelphia Eagles de cierre" />
+        <img src="./tienda/img/sudaeagles1_2.jpg" alt="Sudadera Philadelphia Eagles de cierre vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Philadelphia Eagles de cierre</p>
+      <p class="precio">$1400</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 3 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudsderan.jpg" alt="Sudadera Nike Hombre" />
+        <img src="./tienda/img/sudaderan2.jpg" alt="Sudadera Nike Hombre vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Nike Hombre</p>
+      <p class="precio">$4200</p>
+      <p>Talla: L</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 4 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaadi.avif" alt="Sudadera Adidas Negra" />
+        <img src="./tienda/img/sudaadi_2.avif" alt="Sudadera Adidas Negra vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Adidas Negra</p>
+      <p class="precio">$2900</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 5 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaadi2.webp" alt="Sudadera Adidas Naranja" />
+        <img src="./tienda/img/sudaadi2_1.jpg" alt="Sudadera Adidas Naranja vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Adidas Naranja</p>
+      <p class="precio">$480</p>
+      <p>Talla: 32</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 6 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaderave.webp" alt="Sudadera Verde" />
+        <img src="./tienda/img/sudave_02.jpg" alt="Sudadera Verde vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Verde</p>
+      <p class="precio">$550</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 7 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudamo.jpg" alt="Sudadera Morada" />
+        <img src="./tienda/img/sudamo_2.jpg" alt="Sudadera Morada vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Morada</p>
+      <p class="precio">$299</p>
+      <p>Talla: L</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+    <!-- Producto 8 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudab.jpg" alt="Sudadera Azul" />
+        <img src="./tienda/img/sudab_2.jpg" alt="Sudadera Azul vista posterior" />
+      </div>
+      <p class="nombre">Sudadera Blanca</p>
+      <p class="precio">$620</p>
+      <p>Talla: S</p>
+      <button class="btn-agregar">Añadir al carrito</button>
+    </div>
+ 
+ 
+ 
+  <!-- Panel lateral del carrito -->
+  <div class="carrito-panel" id="carrito-panel">
+    <h3>Tu Carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p class="total">Total: <span id="total">$0</span></p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </div>
+ 
+  <script src="./script.js"></script>
+</body>
+</html>

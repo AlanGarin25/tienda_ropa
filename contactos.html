@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - The Men's</title>
+  <link rel="stylesheet" href="./tienda/css/styles.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="./tienda/img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./tienda/img/" alt="Logo de la tienda">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="bienvenida" style="text-align: center;">
+    <h2>Contacto</h2>
+    <p>Si tienes dudas o quieres hacer un pedido, envíanos un mensaje:</p>
+  </div>
+
+  <div style="max-width: 500px; margin: 0 auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <form id="form-contacto">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 8px; margin: 5px 0;"></textarea><br>
+
+      <button type="submit" style="padding: 10px 20px; background: #ad16df; color: white; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+    </form>
+    <p id="confirmacion" style="color: green; margin-top: 10px;"></p>
+  </div>
+
+  <script>
+    document.getElementById('form-contacto').addEventListener('submit', function(e){
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const mensaje = document.getElementById('mensaje').value;
+
+      // Simular envío
+      document.getElementById('confirmacion').textContent = `Gracias ${nombre}, tu mensaje ha sido enviado.`;
+      
+      // Limpiar formulario
+      this.reset();
+    });
+  </script>
+</body>
+</html>

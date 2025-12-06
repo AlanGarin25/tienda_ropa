@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="../img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/Logo.jpg" alt="Logo de la tienda">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+
+          <li>
+            <a href="#calzado">Calzado</a>
+            <ul class="submenu">
+              <li><a href="./calzado/tenis.html">Tenis</a></li>
+              <li><a href="#">Zapatos</a></li>
+             
+            </ul>
+          </li>
+
+          <li>
+            <a href="#ropa">Ropa</a>
+            <ul class="submenu">
+              <li><a href="#">Sudaderas</a></li>
+              <li><a href="#">Playeras</a></li>
+             
+            </ul>
+          </li>
+
+          <li>
+            <a href="#accesorios">Accesorios</a>
+            <ul class="submenu">
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Perfumes</a></li>
+              <li><a href="#">Carteras</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="buscador">
+      <input type="text" id="busqueda" placeholder="Buscar producto...">
+      <button id="btn-buscar">Buscar</button>
+    </div>
+
+    <!-- CARRITO -->
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1l-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="oferta"><span>¡Aprovecha nuestros descuentos del 20%!</span></div>
+
+  <p class="bienvenida">Bienvenidos a The Men's, tienda exclusiva para Hombres</p>
+  <h2 style="padding:0 20px;">Tenis de Temporada</h2>
+
+  <div class="productos">
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/tf1.avif">
+        <img src="../img/tf1_2.avif">
+      </div>
+      <p class="nombre">Tenis Full Strong de hombre para correr</p>
+      <p class="precio">$1300</p>
+      <p>Talla: 32</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Full Strong de hombre para correr" 
+              data-precio="1300">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/tp1.avif">
+        <img src="../img/tp1_2.avif">
+      </div>
+      <p class="nombre">PIRMA Tenis Prismatic de hombre para correr</p>
+      <p class="precio">$1500</p>
+      <p>Talla: M</p>
+      <button class="btn-agregar" 
+              data-nombre="PIRMA Tenis Prismatic de hombre para correr" 
+              data-precio="1500">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="../img/tt1.avif">
+        <img src="../img/tt1_2.avif">
+      </div>
+      <p class="nombre">Tenis Taydee de hombre para entrenamiento</p>
+      <p class="precio">$299</p>
+      <p>Talla: L</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Taydee de hombre para entrenamiento" 
+              data-precio="299">Añadir al carrito</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/tenspo1.avif">
+        <img src="/tienda/img/tenspo1_!.avif">
+      </div>
+      <p class="nombre">Tenis Power Max de hombre para correr</p>
+      <p class="precio">$620</p>
+      <p>Talla: S</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Power Max de hombre para correr" 
+              data-precio="620">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <!-- PANEL DEL CARRITO -->
+  <div class="carrito-panel" id="carrito-panel">
+    <h3>Tu Carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p class="total">Total: <span id="total">$0</span></p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </div>
+
+  <!-- Script del carrito -->
+  <script src="../../script.js"></script>
+
+</body>
+</html>

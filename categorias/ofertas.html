@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ofertas - The Men's</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="../img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/Logo.jpg" alt="Logo">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../paginas/novedades.html">Novedades</a></li>
+      <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">Calzado</a>
+            <ul class="submenu">
+              <li><a href="./calzado/tenis.html">Tenis</a></li>
+              <li><a href="#">Zapatos</a></li>
+              <li><a href="#">Botas</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Ropa</a>
+            <ul class="submenu">
+              <li><a href="#">Sudaderas</a></li>
+              <li><a href="#">Playeras</a></li>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Gorras</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Accesorios</a>
+            <ul class="submenu">
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Perfumes</a></li>
+              <li><a href="#">Carteras</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="buscador">
+      <input type="text" id="buscar" placeholder="Buscar producto...">
+      <button id="btn-buscar">Buscar</button>
+    </div>
+
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1l-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+  </nav>
+
+  <h2 style="padding:0 20px;">Ofertas Especiales</h2>
+
+  <div class="productos">
+
+    <!-- Oferta 1 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/runee1.avif" alt="">
+        <img src="/tienda/img/runee1_1.avif" alt="">
+      </div>
+      <p class="nombre">Tenis Runner Elite</p>
+      <p class="precio">$899</p>
+      <p>Talla: 28</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Runner Elite" 
+              data-precio="899" 
+              data-img="../img/of1.avif">
+        Añadir al carrito
+      </button>
+    </div>
+
+    <!-- Oferta 2 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/teu1.avif" alt="">
+        <img src="/tienda/img/teu1_1.avif" alt="">
+      </div>
+      <p class="nombre">Tenis Urban Street</p>
+      <p class="precio">$750</p>
+      <p>Talla: 30</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Urban Street" 
+              data-precio="750" 
+              data-img="../img/of2.avif">
+        Añadir al carrito
+      </button>
+    </div>
+
+    <!-- Oferta 3 -->
+    <div class="producto">
+      <div class="imagenes">
+        <img src="/tienda/img/tere1.avif" alt="">
+        <img src="/tienda/img/tere1_1.avif" alt="">
+      </div>
+      <p class="nombre">Tenis Retro Classic</p>
+      <p class="precio">$620</p>
+      <p>Talla: 27</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Retro Classic" 
+              data-precio="620" 
+              data-img="../img/of3.avif">
+        Añadir al carrito
+      </button>
+    </div>
+
+    <!-- Oferta 4 -->
+    <div class="producto">
+      <div class="imagenes">
+           <img src="/tienda/img/tenspo1.avif">
+        <img src="/tienda/img/tenspo1_!.avif">
+      </div>
+      <p class="nombre">Tenis Sport Flex</p>
+      <p class="precio">$540</p>
+      <p>Talla: 29</p>
+      <button class="btn-agregar" 
+              data-nombre="Tenis Sport Flex" 
+              data-precio="540" 
+              data-img="../img/of4.avif">
+        Añadir al carrito
+      </button>
+    </div>
+
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

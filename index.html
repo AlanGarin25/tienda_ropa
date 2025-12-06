@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="./tienda/css/styles.css">
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="./tienda/img/ban.png" alt="Banner de la tienda">
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./tienda/img/Logo.jpg" alt="Logo de la tienda">
+      <p class="ma">THE MEN'S</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="/tienda/categorias/ofertas.html">Ofertas</a></li>
+
+      <li>
+        <a href="#">Categorías</a>
+        <ul class="submenu">
+          <li>
+            <a href="#calzado">Calzado</a>
+            <ul class="submenu">
+              <li><a href="/tienda/categorias/tenis.html">Tenis</a></li>
+              <li><a href="./tienda/categorias/zapatos.html">Zapatos</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#ropa">Ropa</a>
+            <ul class="submenu">
+              <li><a href="sudaderas.html">Sudaderas</a></li>
+              <li><a href="./tienda/categorias/playeras.html">Playeras</a></li>
+            </ul>
+          </li>
+
+          
+        </ul>
+      </li>
+
+      <li><a href="./contactos.html">Contacto</a></li>
+    </ul>
+
+    <!-- BUSCADOR -->
+  <form class="buscador" onsubmit="buscarJS(); return false;">
+    <input type="text" id="buscar" placeholder="Buscar prenda">
+    <button type="submit">Buscar</button>
+</form>
+
+    <div id="resultados"></div>
+
+    <!-- CARRITO -->
+    <div class="carrito" id="carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 19a2 2 0 1 0 4 0 2 2 0 1 0 -4 0"/>
+        <path d="M17 19a2 2 0 1 0 4 0 2 2 0 1 0 -4 0"/>
+        <path d="M17 17h-11v-14h-2"/>
+        <path d="M6 5l14 1-1 7h-13"/>
+      </svg>
+      <span id="contador">0</span>
+      <div class="carrito-detalle" id="detalle-carrito">
+        <p>Carrito vacío</p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="oferta">
+    <span>¡Aprovecha nuestros descuentos del 20%!</span>
+  </div>
+
+  <p class="bienvenida">Bienvenidos a The Men's, tienda exclusiva para Hombres</p>
+
+  <!-- ========================================================= -->
+  <!-- ======================= PRODUCTOS ======================== -->
+  <!-- ========================================================= -->
+
+  <!-- Sudaderas -->
+  <h2 id="sudaderas" style="padding:0 20px;">Sudaderas</h2>
+  <div class="productos">
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaeagles.jpg">
+        <img src="./tienda/img/sudaea_01.webp">
+      </div>
+      <p class="nombre">Sudadera Philadelphia Eagles</p>
+      <p class="precio">$500</p>
+      <p>Talla: CH, M, G</p>
+      <button class="btn-agregar" data-nombre="Sudadera Philadelphia Eagles" data-precio="500">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/sudaderave.webp">
+        <img src="./tienda/img/sudave_02.jpg">
+      </div>
+      <p class="nombre">Sudadera Verde</p>
+      <p class="precio">$550</p>
+      <p>Talla: M, G</p>
+      <button class="btn-agregar" data-nombre="Sudadera Verde" data-precio="550">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Playeras -->
+  <h2 id="playeras" style="padding:0 20px;">Playeras</h2>
+  <div class="productos">
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/pla_per1.webp">
+        <img src="./tienda/img/pla_per1_1.webp">
+      </div>
+      <p class="nombre">Playera Perro Negra</p>
+      <p class="precio">$650</p>
+      <p>Talla: CH, M , G </p>
+      <button class="btn-agregar" data-nombre="Playera Perro Negra" data-precio="650">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/playe_bla1.webp">
+        <img src="./tienda/img/playe_bla1_1.webp">
+      </div>
+      <p class="nombre">Playera Blanca</p>
+      <p class="precio">$520</p>
+      <p>Talla: M, G</p>
+      <button class="btn-agregar" data-nombre="Playera Blanca" data-precio="520">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <!-- Zapatos -->
+  <h2 id="zapatos" style="padding:0 20px;">Zapatos</h2>
+  <div class="productos">
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/zca1_1.avif">
+        <img src="./tienda/img/zca1_2.avif">
+      </div>
+      <p class="nombre">Zapato derby para hombre color café</p>
+      <p class="precio">$1500</p>
+      <p>Talla: 24,26,27</p>
+      <button class="btn-agregar" data-nombre="Zapato derby para hombre color café" data-precio="1500">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/zapa_caf1.avif">
+        <img src="./tienda/img/zapa_caf1_1.avif">
+      </div>
+      <p class="nombre">Tenis Full Strong de hombre para correr</p>
+      <p class="precio">$1300</p>
+      <p>Talla: 24,26,28</p>
+      <button class="btn-agregar" data-nombre="Tenis Full Strong de hombre para correr" data-precio="1300">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <!-- Perfumes -->
+  <h2 id="perfumes" style="padding:0 20px;">Perfumes</h2>
+  <div class="productos">
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/perfu_aqua_1.avif">
+        <img src="./tienda/img/perfu_aqua_1_1.avif">
+      </div>
+      <p class="nombre">Eau de parfum Acqua Di Gio Profondo para hombre</p>
+      <p class="precio">$3800</p>
+      <p>Acqua di Gio</p>
+      <button class="btn-agregar" data-nombre="Acqua Di Gio Profondo" data-precio="3800">Añadir al carrito</button>
+    </div>
+
+    <div class="producto">
+      <div class="imagenes">
+        <img src="./tienda/img/perfu_eau_1.avif">
+        <img src="./tienda/img/perfu_eau_1_1.avif">
+      </div>
+      <p class="nombre">Eau de parfum Emper Stallion 53 unisex</p>
+      <p class="precio">$599</p>
+      <p>unisex</p>
+      <button class="btn-agregar" data-nombre="Emper Stallion 53" data-precio="599">Añadir al carrito</button>
+    </div>
+
+  </div>
+
+  <!-- PANEL DEL CARRITO -->
+  <div class="carrito-panel" id="carrito-panel">
+    <h3>Tu Carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p class="total">Total: <span id="total">$0</span></p>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

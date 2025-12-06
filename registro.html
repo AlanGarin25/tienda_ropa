@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenedor {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(2px);
+    }
+
+    .card {
+        background: white;
+        width: 330px;
+        padding: 30px 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #7d1bbd;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background: #21a42d;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #33cc44;
+    }
+
+    a {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #7d1bbd;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body style="background-image: url('');"> <!-- Tú pones la imagen -->
+    
+<div class="contenedor">
+    <div class="card">
+        <h2>Crear Cuenta</h2>
+
+        <form action="/registro" method="POST">
+            <input type="email" name="email" placeholder="Correo" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+
+        <a href="login.html">Volver al inicio</a>
+    </div>
+</div>
+
+</body>
+</html>
